@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonaPrism - System Audio EQ & Effects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(180deg, #0a0a1a 0%, #0a0a0f 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0096ff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #999;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 16px 48px;
+            background: linear-gradient(135deg, #0096ff, #0066cc);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 150, 255, 0.3);
+        }
+
+        .download-info {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .features {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: #12121a;
+            border: 1px solid #1e1e2e;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            color: #0096ff;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .setup-section {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .setup-section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            background: #0096ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .step-content h4 {
+            margin-bottom: 6px;
+        }
+
+        .step-content p {
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .step-content a {
+            color: #0096ff;
+            text-decoration: none;
+        }
+
+        .step-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #444;
+            border-top: 1px solid #1e1e2e;
+        }
+
+        .screenshot {
+            max-width: 700px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .screenshot img {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #1e1e2e;
+        }
+
+        .platform-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #1e1e2e;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>SonaPrism</h1>
+        <p>System-level audio EQ and studio effects for Windows. Shape how your music sounds from any app.</p>
+        <a href="https://github.com/YOUR_USERNAME/sonaprism/releases/latest/download/SonaPrism.zip" class="download-btn">Download for Windows</a>
+        <div class="download-info">Windows 10/11 - Free - v1.0</div>
+        <div class="platform-badge">Windows Only</div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>10-Band EQ</h3>
+            <p>Precise control from 32 Hz sub-bass to 16 kHz treble with real-time curve visualization.</p>
+        </div>
+        <div class="feature">
+            <h3>Studio Effects</h3>
+            <p>Compressor, stereo widening, reverb, and delay with simple and detailed controls.</p>
+        </div>
+        <div class="feature">
+            <h3>Genre Presets</h3>
+            <p>Professional presets for Hip-Hop, Rock, Electronic, Jazz, Pop, and more.</p>
+        </div>
+        <div class="feature">
+            <h3>Works Everywhere</h3>
+            <p>Applies to all system audio — Spotify, Apple Music, YouTube, games, anything.</p>
+        </div>
+        <div class="feature">
+            <h3>Zero Clipping</h3>
+            <p>Built-in limiter prevents distortion no matter how hard you boost.</p>
+        </div>
+        <div class="feature">
+            <h3>Instant Response</h3>
+            <p>Changes apply in real-time. Move a slider, hear the difference immediately.</p>
+        </div>
+    </div>
+
+    <div class="setup-section">
+        <h2>Setup Guide</h2>
+
+        <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+                <h4>Download & Extract</h4>
+                <p>Download the SonaPrism.zip file and extract it anywhere on your computer.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+                <h4>Run Setup</h4>
+                <p>Right-click <strong>setup.bat</strong> and choose "Run as administrator." It will download and install the required audio drivers automatically.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+                <h4>Install LoudMax</h4>
+                <p>The setup script will open the <a href="https://loudmax.blogspot.com/">LoudMax website</a>. Download the VST2 64-bit version and put <strong>LoudMax64.dll</strong> in <code>C:\Program Files\EqualizerAPO\VSTPlugins\</code></p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+                <h4>Restart & Launch</h4>
+                <p>Restart your computer, then run SonaPrism from the desktop shortcut (right-click → Run as administrator).</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>SonaPrism &copy; 2026</p>
+    </footer>
+</body>
+</html>
